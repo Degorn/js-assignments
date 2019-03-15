@@ -30,7 +30,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return new RegExp(/{\w{8}((-\w{4}){3})-([0-9A,a-e,A-E]{12})}/);
 }
 
 
